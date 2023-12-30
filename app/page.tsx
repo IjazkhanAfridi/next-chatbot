@@ -83,8 +83,8 @@ export default function Chat() {
           <div className="mx-auto w-full max-w-screen-md h-full flex items-end">
             <div className="flex flex-wrap items-start w-full">
               {examples.map((example, i) => (
-                <div className="w-[50%] p-2">
-                  <button key={i} className="rounded-md w-full border border-[#394648] px-2 py-3 text-left text-sm text-gray-500 transition-all duration-75 hover:border-black hover:text-gray-700 active:bg-gray-50"
+                <div key={i} className="w-[50%] p-2">
+                  <button className="rounded-md w-full border border-[#394648] px-2 py-3 text-left text-sm text-gray-500 transition-all duration-75 hover:border-black hover:text-gray-700 active:bg-gray-50"
                     onClick={() => {
                       setInput(example);
                       inputRef.current?.focus();
