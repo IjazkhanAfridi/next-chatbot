@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.myTextArea::-webkit-input-placeholder {
+    /* Webkit browsers (Chrome, Safari) */
+    display: none;
+}
+
+.myTextArea:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    display: none;
+}
+
+.myTextArea::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    display: none;
+}
+
+.myTextArea:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    display: none;
+}
